@@ -2,89 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://veyroyolyardim.vercel.app/</loc>
+    <lastmod>2026-06-19T21:56:11+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/hizmetler.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/hakkimizda.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/nasil-calisir.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/cekici-basvuru.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/on-kayit.html</loc>
+    <lastmod>2026-06-19T21:56:11+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/sehirler/kocaeli-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:12+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/sehirler/istanbul-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:12+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/izmit-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:13+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/gebze-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:13+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/darica-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/korfez-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/derince-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/kartepe-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/basiskele-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/kadikoy-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/pendik-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/tuzla-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/uskudar-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/avcilar-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/esenyurt-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/besiktas-cekici.html</loc>
-  </url>
-  <url>
-    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/sisli-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:14+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/blog/yol-yardim-rehberi.html</loc>
+    <lastmod>2026-06-19T21:56:14+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/blog/yolda-kalinca-ne-yapilmali.html</loc>
+    <lastmod>2026-06-19T21:56:15+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/blog/cekici-fiyatlari.html</loc>
+    <lastmod>2026-06-19T21:56:15+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/blog/aku-biterse-ne-yapilmali.html</loc>
+    <lastmod>2026-06-19T21:56:16+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/blog/lastik-patlarsa-ne-yapilmali.html</loc>
+    <lastmod>2026-06-19T21:56:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/hakkimizda.html</loc>
+    <lastmod>2026-06-19T21:56:17+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/cekici-basvuru.html</loc>
+    <lastmod>2026-06-19T21:56:17+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://veyroyolyardim.vercel.app/yasal/gizlilik.html</loc>
+    <lastmod>2026-06-19T21:56:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/korfez-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/derince-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:19+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/kartepe-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:19+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/kocaeli/basiskele-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:20+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/kadikoy-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:20+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/pendik-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:21+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/tuzla-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:21+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/uskudar-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/avcilar-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/esenyurt-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:23+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/besiktas-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:23+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://veyroyolyardim.vercel.app/ilceler/istanbul/sisli-cekici.html</loc>
+    <lastmod>2026-06-19T21:56:24+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
 </urlset>

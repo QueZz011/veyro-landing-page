@@ -283,22 +283,58 @@ redirect("gizlilik.html", "/yasal/gizlilik.html");
 const urls = [
   "/",
   "/hizmetler.html",
-  "/hakkimizda.html",
-  "/nasil-calisir.html",
-  "/cekici-basvuru.html",
-  "/on-kayit.html",
   "/sehirler/kocaeli-cekici.html",
   "/sehirler/istanbul-cekici.html",
-  ...kocaeli.map(([slug]) => `/ilceler/kocaeli/${slug}-cekici.html`),
-  ...istanbul.map(([slug]) => `/ilceler/istanbul/${slug}-cekici.html`),
-  ...articles.map((article) => `/${article.file}`),
-  "/yasal/gizlilik.html"
+  "/ilceler/kocaeli/izmit-cekici.html",
+  "/ilceler/kocaeli/gebze-cekici.html",
+  "/ilceler/kocaeli/darica-cekici.html",
+  "/blog/yol-yardim-rehberi.html",
+  "/blog/yolda-kalinca-ne-yapilmali.html",
+  "/blog/cekici-fiyatlari.html",
+  "/blog/aku-biterse-ne-yapilmali.html",
+  "/blog/lastik-patlarsa-ne-yapilmali.html",
+  "/hakkimizda.html",
+  "/cekici-basvuru.html",
+  "/yasal/gizlilik.html",
+  "/ilceler/kocaeli/korfez-cekici.html",
+  "/ilceler/kocaeli/derince-cekici.html",
+  "/ilceler/kocaeli/kartepe-cekici.html",
+  "/ilceler/kocaeli/basiskele-cekici.html",
+  ...istanbul.map(([slug]) => `/ilceler/istanbul/${slug}-cekici.html`)
 ];
+
+function sitemapPriority(url, index) {
+  if (index === 0) return "1.00";
+  const highPriorityUrls = new Set([
+    "/hizmetler.html",
+    "/sehirler/kocaeli-cekici.html",
+    "/sehirler/istanbul-cekici.html",
+    "/ilceler/kocaeli/izmit-cekici.html",
+    "/ilceler/kocaeli/gebze-cekici.html",
+    "/ilceler/kocaeli/darica-cekici.html",
+    "/blog/yol-yardim-rehberi.html",
+    "/blog/yolda-kalinca-ne-yapilmali.html",
+    "/blog/cekici-fiyatlari.html",
+    "/blog/aku-biterse-ne-yapilmali.html",
+    "/blog/lastik-patlarsa-ne-yapilmali.html",
+    "/hakkimizda.html",
+    "/cekici-basvuru.html",
+    "/yasal/gizlilik.html"
+  ]);
+  return highPriorityUrls.has(url) ? "0.80" : "0.64";
+}
+
+function sitemapLastmod(index) {
+  const second = String(11 + Math.floor(index / 2)).padStart(2, "0");
+  return `2026-06-19T21:56:${second}+00:00`;
+}
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url>
+${urls.map((url, index) => `  <url>
     <loc>${site}${url}</loc>
+    <lastmod>${sitemapLastmod(index)}</lastmod>
+    <priority>${sitemapPriority(url, index)}</priority>
   </url>`).join("\n")}
 </urlset>
 `;
