@@ -1,0 +1,12 @@
+{
+  "brandName": "Veyro Yol Yardım",
+  "siteUrl": "https://veyroyolyardim.vercel.app",
+  "customerPhone": "+90 546 534 2033",
+  "customerWhatsapp": "905465342033",
+  "applicationPhone": "+90 546 534 20 33",
+  "applicationWhatsapp": "905465342033",
+  "email": "veyro.iletisim@gmail.com",
+  "cityFocus": ["Kocaeli", "İstanbul", "İzmir", "Ankara", "Antalya"],
+  "defaultWhatsappMessage": "Merhaba, yolda kaldım. Çekici veya yol yardım desteği almak istiyorum. Konumumu paylaşacağım.",
+  "applicationWhatsappMessage": "Merhaba, Veyro Yol Yardım ağına çekici veya şirket başvurusu yapmak istiyorum."
+}

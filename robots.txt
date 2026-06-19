@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veyroyolyardim.vercel.app/sitemap.xml
