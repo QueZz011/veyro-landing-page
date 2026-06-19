@@ -4,6 +4,9 @@ node_modules/
 # Vercel local metadata
 .vercel/
 
+# Generated deploy output
+public/
+
 # Logs
 *.log
 npm-debug.log*

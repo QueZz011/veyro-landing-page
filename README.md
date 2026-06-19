@@ -1,35 +1,31 @@
 # Veyro Yol Yardım Landing Page
 
-Statik SEO landing page. Backend, React veya veritabanı gerektirmez.
-
-Canlı adres:
-
-https://veyroyolyardim.vercel.app/
-
-Son deploy kaynağı: GitHub `main` branch.
+Bu klasör, ana platform açılmadan önce kullanılacak statik tanıtım ve SEO sitesidir. Backend, React veya veritabanı gerektirmez.
 
 ## Klasör Yapısı
 
 - `/`: Ana sayfa ve temel kurumsal sayfalar
-- `/sehirler`: Kocaeli ve İstanbul şehir SEO sayfaları
+- `/sehirler`: Kocaeli ve İstanbul gibi şehir SEO sayfaları
 - `/ilceler`: İlçe bazlı local SEO sayfaları
 - `/blog`: Yol yardım rehberleri ve uzun kuyruk SEO içerikleri
 - `/yasal`: Gizlilik ve yasal metinler
 - `/assets`: CSS, JS, logo ve görseller
-- `/scripts`: SEO sayfa üretimi ve link kontrol araçları
 
-## Komutlar
+## Ayar Dosyası
 
-```powershell
-npm run generate
-npm run check:links
-npm run build
-```
+Telefon, WhatsApp, e-posta ve marka bilgileri için: `config.json`
 
-Google Search Console'a sitemap olarak gönderilecek doğru adres:
+## Görseller
 
-```txt
-https://veyroyolyardim.vercel.app/sitemap.xml
-```
+Gerçek fotoğrafları aşağıdaki isimlerle değiştirmeniz yeterlidir:
 
-`robots.txt` sitemap değildir. Search Console'a sitemap olarak gönderilmez.
+- `assets/img/7-24-oto-cekici-yol-yardim.png`
+- `assets/img/kocaeli-oto-cekici.png`
+- `assets/img/istanbul-7-24-yol-yardim.png`
+- `assets/img/oto-kurtarma-araci.png`
+
+Görselleri mümkünse WebP formatında ve 300 KB altında tutun.
+
+## Yayın
+
+Klasördeki tüm dosyalar hosting paneline veya sunucuya direkt yüklenebilir.

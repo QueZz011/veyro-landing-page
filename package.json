@@ -6,6 +6,6 @@
   "scripts": {
     "generate": "node scripts/generate-seo-site.js",
     "check:links": "node scripts/check-links.js",
-    "build": "npm run generate && npm run check:links"
+    "build": "npm run generate && npm run check:links && node scripts/build-public.js"
   }
 }
