@@ -8,7 +8,7 @@ function walk(dir) {
   for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, item.name);
     if (item.isDirectory()) {
-      if (item.name === "node_modules" || item.name === ".git" || item.name === ".vercel") continue;
+      if (item.name === "node_modules" || item.name === ".git" || item.name === ".vercel" || item.name === "public") continue;
       walk(full);
     } else if (item.name.endsWith(".html")) {
       htmlFiles.push(full);

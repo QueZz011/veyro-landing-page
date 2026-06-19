@@ -296,8 +296,12 @@ const urls = [
 ];
 
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${urls.map((url, index) => `  <url><loc>${site}${url}</loc><lastmod>${lastmod}</lastmod><priority>${index === 0 ? "1.0" : url.includes("/ilceler/") ? "0.84" : url.includes("/blog/") ? "0.78" : "0.86"}</priority>${index === 0 ? `<image:image><image:loc>${site}/assets/img/7-24-oto-cekici-yol-yardim.png</image:loc><image:title>7/24 oto çekici ve yol yardım aracı</image:title></image:image>` : ""}</url>`).join("\n")}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((url, index) => `  <url>
+    <loc>${site}${url}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>${index === 0 ? "1.0" : url.includes("/ilceler/") ? "0.84" : url.includes("/blog/") ? "0.78" : "0.86"}</priority>
+  </url>`).join("\n")}
 </urlset>
 `);
 
