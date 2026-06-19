@@ -297,10 +297,8 @@ const urls = [
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url, index) => `  <url>
+${urls.map((url) => `  <url>
     <loc>${site}${url}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>${index === 0 ? "1.0" : url.includes("/ilceler/") ? "0.84" : url.includes("/blog/") ? "0.78" : "0.86"}</priority>
   </url>`).join("\n")}
 </urlset>
 `;
