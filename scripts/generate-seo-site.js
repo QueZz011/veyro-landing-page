@@ -295,7 +295,7 @@ const urls = [
   "/yasal/gizlilik.html"
 ];
 
-write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((url, index) => `  <url>
     <loc>${site}${url}</loc>
@@ -303,45 +303,19 @@ ${urls.map((url, index) => `  <url>
     <priority>${index === 0 ? "1.0" : url.includes("/ilceler/") ? "0.84" : url.includes("/blog/") ? "0.78" : "0.86"}</priority>
   </url>`).join("\n")}
 </urlset>
-`);
+`;
+
+write("sitemap.xml", sitemapXml);
+write("sitemap-main.xml", sitemapXml);
 
 write("robots.txt", `User-agent: *
 Allow: /
 
 Sitemap: ${site}/sitemap.xml
+Sitemap: ${site}/sitemap-main.xml
 `);
 
-write("README.md", `# Veyro Yol Yardım Landing Page
-
-Bu klasör, ana platform açılmadan önce kullanılacak statik tanıtım ve SEO sitesidir. Backend, React veya veritabanı gerektirmez.
-
-## Klasör Yapısı
-
-- \`/\`: Ana sayfa ve temel kurumsal sayfalar
-- \`/sehirler\`: Kocaeli ve İstanbul gibi şehir SEO sayfaları
-- \`/ilceler\`: İlçe bazlı local SEO sayfaları
-- \`/blog\`: Yol yardım rehberleri ve uzun kuyruk SEO içerikleri
-- \`/yasal\`: Gizlilik ve yasal metinler
-- \`/assets\`: CSS, JS, logo ve görseller
-
-## Ayar Dosyası
-
-Telefon, WhatsApp, e-posta ve marka bilgileri için: \`config.json\`
-
-## Görseller
-
-Gerçek fotoğrafları aşağıdaki isimlerle değiştirmeniz yeterlidir:
-
-- \`assets/img/7-24-oto-cekici-yol-yardim.png\`
-- \`assets/img/kocaeli-oto-cekici.png\`
-- \`assets/img/istanbul-7-24-yol-yardim.png\`
-- \`assets/img/oto-kurtarma-araci.png\`
-
-Görselleri mümkünse WebP formatında ve 300 KB altında tutun.
-
-## Yayın
-
-Klasördeki tüm dosyalar hosting paneline veya sunucuya direkt yüklenebilir.
-`);
+const readmeMd = ["# Veyro Yol Yardim Landing Page","","Static SEO landing page. No backend, React, or database required.","","Live URL:","","https://veyroyolyardim.vercel.app/","","Deployment source: GitHub main branch.","","## Structure","","- /: Homepage and core pages","- /sehirler: City SEO pages","- /ilceler: District local SEO pages","- /blog: Road assistance guides","- /yasal: Legal pages","- /assets: CSS, JS, logo, and images","- /scripts: SEO generation and link checks","","## Commands","","```powershell","npm run generate","npm run check:links","npm run build","```","","Primary sitemap for Google Search Console:","","```txt","https://veyroyolyardim.vercel.app/sitemap.xml","```","","Alternative sitemap if Google caches an old result:","","```txt","https://veyroyolyardim.vercel.app/sitemap-main.xml","```","","robots.txt is not a sitemap. Do not submit robots.txt as a sitemap in Search Console.",""].join("\n");
+write("README.md", readmeMd);
 
 console.log(`Generated ${urls.length} indexable SEO URLs.`);

@@ -1,31 +1,41 @@
-# Veyro Yol Yardım Landing Page
+# Veyro Yol Yardim Landing Page
 
-Bu klasör, ana platform açılmadan önce kullanılacak statik tanıtım ve SEO sitesidir. Backend, React veya veritabanı gerektirmez.
+Static SEO landing page. No backend, React, or database required.
 
-## Klasör Yapısı
+Live URL:
 
-- `/`: Ana sayfa ve temel kurumsal sayfalar
-- `/sehirler`: Kocaeli ve İstanbul gibi şehir SEO sayfaları
-- `/ilceler`: İlçe bazlı local SEO sayfaları
-- `/blog`: Yol yardım rehberleri ve uzun kuyruk SEO içerikleri
-- `/yasal`: Gizlilik ve yasal metinler
-- `/assets`: CSS, JS, logo ve görseller
+https://veyroyolyardim.vercel.app/
 
-## Ayar Dosyası
+Deployment source: GitHub main branch.
 
-Telefon, WhatsApp, e-posta ve marka bilgileri için: `config.json`
+## Structure
 
-## Görseller
+- /: Homepage and core pages
+- /sehirler: City SEO pages
+- /ilceler: District local SEO pages
+- /blog: Road assistance guides
+- /yasal: Legal pages
+- /assets: CSS, JS, logo, and images
+- /scripts: SEO generation and link checks
 
-Gerçek fotoğrafları aşağıdaki isimlerle değiştirmeniz yeterlidir:
+## Commands
 
-- `assets/img/7-24-oto-cekici-yol-yardim.png`
-- `assets/img/kocaeli-oto-cekici.png`
-- `assets/img/istanbul-7-24-yol-yardim.png`
-- `assets/img/oto-kurtarma-araci.png`
+```powershell
+npm run generate
+npm run check:links
+npm run build
+```
 
-Görselleri mümkünse WebP formatında ve 300 KB altında tutun.
+Primary sitemap for Google Search Console:
 
-## Yayın
+```txt
+https://veyroyolyardim.vercel.app/sitemap.xml
+```
 
-Klasördeki tüm dosyalar hosting paneline veya sunucuya direkt yüklenebilir.
+Alternative sitemap if Google caches an old result:
+
+```txt
+https://veyroyolyardim.vercel.app/sitemap-main.xml
+```
+
+robots.txt is not a sitemap. Do not submit robots.txt as a sitemap in Search Console.
