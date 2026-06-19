@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://veyroyolyardim.vercel.app/sitemap.xml
 Sitemap: https://veyroyolyardim.vercel.app/sitemap-main.xml
+Sitemap: https://veyroyolyardim.vercel.app/sitemap.txt

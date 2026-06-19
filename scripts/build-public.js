@@ -23,6 +23,7 @@ const copyItems = [
   "robots.txt",
   "sitemap.xml",
   "sitemap-main.xml",
+  "sitemap.txt",
   "assets",
   "blog",
   "ilceler",
