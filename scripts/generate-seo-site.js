@@ -248,12 +248,12 @@ function ctaBlock(title = "Yolda kaldıysanız beklemeyin") {
 
 function serviceCards() {
   const services = [
-    ["Oto Çekici", "Çalışmayan veya güvenle hareket edemeyen araçlar için çekici yönlendirmesi."],
-    ["Oto Kurtarma", "Kaza, yol dışına çıkma veya zor konumda kalma durumlarında destek."],
-    ["Akü Takviye", "Akü bitmesi gibi durumlarda yerinde çözüm ihtimalinin değerlendirilmesi."],
-    ["Lastik Değişimi", "Patlayan veya inen lastiklerde güvenli müdahale ve yönlendirme."],
-    ["Yakıt Desteği", "Yakıt bitmesi gibi acil ama basit durumlarda iletişim desteği."],
-    ["Kaza Sonrası Araç Çekme", "Kazadan sonra aracın güvenli şekilde taşınması için çekici desteği."]
+    ["Oto Çekici", "Aracınız arıza, kaza veya mekanik sorun nedeniyle güvenli şekilde hareket edemiyorsa oto çekici desteği gerekebilir. Veyra Yol Yardım üzerinden konumunuzu paylaşarak aracınızın durumuna uygun çekici yönlendirme süreci başlatabilirsiniz."],
+    ["Oto Kurtarma", "Araç yol dışına çıktıysa, bulunduğu noktadan kendi imkanlarıyla çıkamıyorsa veya hasar nedeniyle hareket ettirilmesi riskliyse oto kurtarma desteği değerlendirilmelidir. Konum, yol koşulu ve aracın durumu net paylaşıldığında daha doğru destek planlanabilir."],
+    ["Akü Takviye", "Marş basmama, zayıf gösterge ışıkları veya merkezi kilit sorunları akü kaynaklı olabilir. Akü takviye ihtimalinin güvenli olup olmadığı araç durumu ve bulunduğunuz konuma göre değerlendirilir; gerekirse çekici desteği önerilir."],
+    ["Lastik Değişimi", "Lastik patlaması veya inmesi durumunda öncelik güvenli bir noktada durmak ve trafiği riske atmadan yardım istemektir. Stepne, kriko veya güvenli müdahale alanı yoksa yol yardım desteğiyle süreç daha kontrollü ilerler."],
+    ["Yakıt Desteği", "Yakıt bitmesi gibi durumlarda aracın bulunduğu konum, trafik akışı ve en yakın güvenli nokta önemlidir. Telefon veya WhatsApp üzerinden konum paylaşarak yakıt desteği ya da çekici ihtiyacı hızlıca netleştirilebilir."],
+    ["Kaza Sonrası Araç Çekme", "Kaza sonrasında araç çalışsa bile fren, direksiyon, lastik veya alt takım hasarı varsa aracı sürmek riskli olabilir. Önce güvenlik sağlanmalı, ardından aracın uygun çekiciyle taşınması için destek süreci başlatılmalıdır."]
   ];
   return `<div class="grid-3">${services.map(([title, text], index) => `<article class="card"><strong>${String(index + 1).padStart(2, "0")}</strong><h3>${title}</h3><p>${text}</p></article>`).join("")}</div>`;
 }
@@ -271,13 +271,20 @@ function homePage() {
     ["Konumumu WhatsApp'tan gönderebilir miyim?", "Evet. WhatsApp üzerinden konum paylaşarak daha hızlı destek talebi oluşturabilirsiniz."],
     ["Sadece çekici mi var?", "Hayır. Akü takviye, lastik değişimi, yakıt desteği ve araç kurtarma gibi yol yardım ihtiyaçları için de iletişim kurulabilir."],
     ["Kaza sonrası araç çekme desteği var mı?", "Evet. Kaza sonrası aracın güvenli şekilde taşınması için çekici desteği talep edilebilir."],
-    ["Kocaeli'nin hangi ilçelerinde hizmet var?", "İzmit, Gebze, Darıca, Körfez, Derince, Kartepe, Başiskele, Çayırova, Gölcük, Karamürsel, Kandıra ve Dilovası hedef hizmet alanlarıdır."]
+    ["Kocaeli'nin hangi ilçelerinde hizmet var?", "İzmit, Gebze, Darıca, Körfez, Derince, Kartepe, Başiskele, Çayırova, Gölcük, Karamürsel, Kandıra ve Dilovası hedef hizmet alanlarıdır."],
+    ["İstanbul'da hangi bölgeler için yol yardım talebi oluşturabilirim?", "Kadıköy, Pendik, Tuzla, Üsküdar, Kartal, Maltepe, Ataşehir, Avcılar, Esenyurt, Beşiktaş, Şişli ve Beylikdüzü gibi hedef bölgeler için yol yardım ve çekici talepleri oluşturulabilir."]
   ].map(([q, a]) => ({ q, a }));
+  const processSteps = [
+    ["Konumunuzu paylaşın", "Bulunduğunuz noktayı telefon veya WhatsApp üzerinden paylaşarak talebin daha hızlı anlaşılmasını sağlayın."],
+    ["Araç durumunu belirtin", "Aracın çalışıp çalışmadığını, kaza durumu olup olmadığını, lastik, akü veya yakıt sorununu kısaca açıklayın."],
+    ["Uygun destek için iletişim kurulsun", "Paylaştığınız konum ve araç bilgisine göre çekici veya yol yardım ihtiyacı değerlendirilir."],
+    ["Çekici veya yol yardım süreci başlatılsın", "Fiyat ve hizmet bilgisi netleştikten sonra uygun destek süreci başlatılır."]
+  ];
   const body = `<main>
     <section class="hero"><div class="container hero-grid"><div><p class="eyebrow">Kocaeli ve İstanbul'da aktif yol yardım</p><h1>Kocaeli ve İstanbul'da 7/24 Oto Çekici ve Yol Yardım</h1><p class="lead">Veyra Yol Yardım; yolda kalan sürücüler için oto çekici, araç kurtarma, akü takviye, lastik değişimi ve acil yol yardım taleplerinde hızlı iletişim desteği sunar.</p><div class="hero-actions"><a class="btn round-call" href="tel:${phoneHref}"><small>Yolda mı kaldınız?</small>Hemen Ara</a><a class="btn secondary" href="${waLink()}">WhatsApp'tan Konum Gönder</a></div><div class="trust-row"><div class="trust-item"><strong>7/24</strong><span>Kesintisiz iletişim</span></div><div class="trust-item"><strong>Kocaeli</strong><span>Öncelikli hizmet bölgesi</span></div><div class="trust-item"><strong>İstanbul</strong><span>Aktif hedef bölge</span></div></div></div><div class="photo-frame"><img src="/assets/img/7-24-oto-cekici-yol-yardim-760.jpg" alt="7/24 oto çekici ve yol yardım aracı" width="760" height="1013" fetchpriority="high" decoding="async"></div></div></section>
     <section class="section dark"><div class="container"><div class="section-head"><h2>Yol yardım hizmetleri</h2><p>Kocaeli ve İstanbul merkezli, hizmet ağı genişletilen yol yardım desteği.</p></div>${serviceCards()}</div></section>
     <section class="section"><div class="container"><div class="section-head"><h2>Hizmet bölgeleri</h2><p>Öncelikli hedef Kocaeli ve İstanbul'dur. İlçe sayfaları kullanıcıyı doğrudan bulunduğu bölgeye taşır.</p></div><div class="area-columns">${cityAreaLinks("kocaeli")}${cityAreaLinks("istanbul")}</div></div></section>
-    <section class="section dark"><div class="container"><div class="section-head"><h2>Nasıl çalışır?</h2><p>Yolda kalan sürücünün aradığı bilgiye birkaç saniyede ulaşması hedeflenir.</p></div><div class="grid-4">${["Konumunuzu paylaşın", "Araç durumunu belirtin", "Uygun destek için iletişim kurulsun", "Çekici veya yol yardım süreci başlatılsın"].map((item, index) => `<article class="card"><strong>${index + 1}</strong><h3>${item}</h3><p>Talebin net ilerlemesi için telefonunuz açık olmalı ve konum bilgisi doğru paylaşılmalıdır.</p></article>`).join("")}</div></div></section>
+    <section class="section dark"><div class="container"><div class="section-head"><h2>Nasıl çalışır?</h2><p>Yolda kalan sürücünün aradığı bilgiye birkaç saniyede ulaşması hedeflenir.</p></div><div class="grid-4">${processSteps.map(([title, text], index) => `<article class="card"><strong>${index + 1}</strong><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></div></section>
     <section class="section"><div class="container">${faqBlock(faq)}${ctaBlock("Hemen yol yardım talebi oluşturun")}</div></section>
   </main>`;
   addPage("/", page({
