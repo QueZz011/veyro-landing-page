@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://veyrayolyardim.com/sitemap.xml
-Sitemap: https://veyrayolyardim.com/sitemap-main.xml
-Sitemap: https://veyrayolyardim.com/sitemap.txt

@@ -8,42 +8,82 @@
   "redirects": [
     {
       "source": "/kocaeli-cekici.html",
-      "destination": "/sehirler/kocaeli-cekici.html",
+      "destination": "/kocaeli/cekici",
       "permanent": true
     },
     {
       "source": "/istanbul-cekici.html",
-      "destination": "/sehirler/istanbul-cekici.html",
+      "destination": "/istanbul/cekici",
+      "permanent": true
+    },
+    {
+      "source": "/sehirler/kocaeli-cekici.html",
+      "destination": "/kocaeli/cekici",
+      "permanent": true
+    },
+    {
+      "source": "/sehirler/istanbul-cekici.html",
+      "destination": "/istanbul/cekici",
       "permanent": true
     },
     {
       "source": "/yol-yardim-rehberi.html",
-      "destination": "/blog/yol-yardim-rehberi.html",
+      "destination": "/yol-yardim-rehberi",
+      "permanent": true
+    },
+    {
+      "source": "/blog/yol-yardim-rehberi.html",
+      "destination": "/yol-yardim-rehberi",
       "permanent": true
     },
     {
       "source": "/yolda-kalinca-ne-yapilmali.html",
-      "destination": "/blog/yolda-kalinca-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/yolda-kalinca-ilk-ne-yapilmali",
+      "permanent": true
+    },
+    {
+      "source": "/blog/yolda-kalinca-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/yolda-kalinca-ilk-ne-yapilmali",
       "permanent": true
     },
     {
       "source": "/cekici-fiyatlari.html",
-      "destination": "/blog/cekici-fiyatlari.html",
+      "destination": "/yol-yardim-rehberi/cekici-fiyatlari-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cekici-fiyatlari.html",
+      "destination": "/yol-yardim-rehberi/cekici-fiyatlari-2026",
       "permanent": true
     },
     {
       "source": "/aku-biterse-ne-yapilmali.html",
-      "destination": "/blog/aku-biterse-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/aku-bitince-ne-yapilir",
+      "permanent": true
+    },
+    {
+      "source": "/blog/aku-biterse-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/aku-bitince-ne-yapilir",
       "permanent": true
     },
     {
       "source": "/lastik-patlarsa-ne-yapilmali.html",
-      "destination": "/blog/lastik-patlarsa-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/lastik-patlarsa-ne-yapilmali",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lastik-patlarsa-ne-yapilmali.html",
+      "destination": "/yol-yardim-rehberi/lastik-patlarsa-ne-yapilmali",
       "permanent": true
     },
     {
       "source": "/gizlilik.html",
-      "destination": "/yasal/gizlilik.html",
+      "destination": "/gizlilik-politikasi",
+      "permanent": true
+    },
+    {
+      "source": "/yasal/gizlilik.html",
+      "destination": "/gizlilik-politikasi",
       "permanent": true
     }
   ],
