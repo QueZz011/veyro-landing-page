@@ -344,14 +344,8 @@ p {
 }
 
 .photo-frame::after {
-  content: "Çekici görseli eklenecek";
-  position: absolute;
-  left: 26px;
-  bottom: 24px;
-  z-index: 1;
-  color: #fff8e7;
-  font-weight: 900;
-  font-size: 26px;
+  content: "";
+  display: none;
 }
 
 .photo-frame img {
