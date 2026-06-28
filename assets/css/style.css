@@ -653,12 +653,11 @@ textarea {
 }
 
 .whatsapp-float .icon {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 34px;
   height: 34px;
+  flex: 0 0 34px;
   border-radius: 999px;
-  background: #fff;
 }
 
 @media (max-width: 920px) {

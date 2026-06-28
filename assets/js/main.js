@@ -1,14 +1,14 @@
-(function () {
+﻿(function () {
   const defaults = {
-    brandName: "Veyro Yol Yardım",
-    siteUrl: "https://veyroyolyardim.vercel.app",
-    customerPhone: "+90 555 555 55 55",
-    customerWhatsapp: "905555555555",
-    applicationPhone: "+90 555 555 55 55",
-    applicationWhatsapp: "905555555555",
+    brandName: "Veyra Yol Yardım",
+    siteUrl: "https://veyrayolyardim.com",
+    customerPhone: "+90 546 534 20 33",
+    customerWhatsapp: "905465342033",
+    applicationPhone: "+90 546 534 20 33",
+    applicationWhatsapp: "905465342033",
     email: "veyro.iletisim@gmail.com",
     defaultWhatsappMessage: "Merhaba, yolda kaldım. Çekici veya yol yardım desteği almak istiyorum. Konumumu paylaşacağım.",
-    applicationWhatsappMessage: "Merhaba, Veyro Yol Yardım ağına çekici veya şirket başvurusu yapmak istiyorum."
+    applicationWhatsappMessage: "Merhaba, Veyra Yol Yardım ağına çekici veya şirket başvurusu yapmak istiyorum."
   };
 
   const state = { config: defaults };

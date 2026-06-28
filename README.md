@@ -1,22 +1,22 @@
-# Veyro Yol Yardim Landing Page
+# Veyra Yol Yardım Landing Page
 
-Static SEO landing page. No backend, React, or database required.
+Statik SEO landing page. Backend, React veya veritabanı gerektirmez.
 
-Live URL:
+Canlı URL:
 
-https://veyroyolyardim.vercel.app/
+https://veyrayolyardim.com/
 
 Deployment source: GitHub main branch.
 
 ## Structure
 
-- /: Homepage and core pages
-- /sehirler: City SEO pages
-- /ilceler: District local SEO pages
-- /blog: Road assistance guides
-- /yasal: Legal pages
-- /assets: CSS, JS, logo, and images
-- /scripts: SEO generation and link checks
+- /: Ana sayfa ve temel sayfalar
+- /sehirler: Şehir SEO sayfaları
+- /ilceler: İlçe local SEO sayfaları
+- /blog: Yol yardım rehberleri
+- /yasal: Yasal sayfalar
+- /assets: CSS, JS, logo ve görseller
+- /scripts: SEO üretimi ve link kontrolleri
 
 ## Commands
 
@@ -26,16 +26,10 @@ npm run check:links
 npm run build
 ```
 
-Primary sitemap for Google Search Console:
+Google Search Console için ana sitemap:
 
 ```txt
-https://veyroyolyardim.vercel.app/sitemap.xml
+https://veyrayolyardim.com/sitemap.xml
 ```
 
-Alternative sitemap if Google caches an old result:
-
-```txt
-https://veyroyolyardim.vercel.app/sitemap-main.xml
-```
-
-robots.txt is not a sitemap. Do not submit robots.txt as a sitemap in Search Console.
+robots.txt sitemap olarak gönderilmez.

@@ -1,8 +1,8 @@
-{
-  "name": "veyro-landing-page",
+﻿{
+  "name": "veyra-landing-page",
   "version": "1.0.0",
   "private": true,
-  "description": "Static SEO landing page for Veyro Yol Yardım.",
+  "description": "Static SEO landing page for Veyra Yol Yardım.",
   "scripts": {
     "generate": "node scripts/generate-seo-site.js",
     "check:links": "node scripts/check-links.js",
